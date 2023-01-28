@@ -27,5 +27,8 @@ jobs:
       # Runs a single command using the runners shell
       - name: Trigger krb5 issue through the libczmq-dev install
         run: | 
+          # Hack to stop using azure.archive.ubuntu.com, use archive.ubuntu.com directory
+          sudo sed -i 's/azure\.//' /etc/apt/sources.list 
+          sudo apt-get update
           sudo apt-get install --yes libczmq-dev
           
