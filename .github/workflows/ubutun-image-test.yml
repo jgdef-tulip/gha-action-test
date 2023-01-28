@@ -34,3 +34,4 @@ jobs:
         run: | 
           sudo apt-get remove mongodb-database-tools
           sudo apt-get install --yes mongodb-server
+          sudo apt-get install --yes libczmq-dev libsodium-dev
