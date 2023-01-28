@@ -32,4 +32,5 @@ jobs:
       # Runs a single command using the runners shell
       - name: Trigger krb5 issue through mongo-server install
         run: | 
-        sudo apt-get install --yes libczmq-dev
+          sudo apt-get install --yes libczmq-dev
+          
